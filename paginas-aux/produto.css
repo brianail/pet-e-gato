@@ -28,11 +28,13 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     z-index: 900;
+    animation: fadeIn 1s ease forwards; /* Animação de entrada */
   }
   
   .cart-info h3 {
     font-size: 1.5rem;
     color: #333;
+    animation: fadeIn 1s ease forwards; /* Animação de entrada */
   }
   
   .checkout-btn {
@@ -55,6 +57,7 @@
     display: flex;
     width: 100%;
     margin-top: 20px;
+    animation: fadeIn 1s ease forwards; /* Animação de entrada */
   }
   
   /* Filtros laterais */
@@ -68,6 +71,7 @@
     box-shadow: 0 8px 32px rgba(137, 137, 141, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: fadeInUp 1s forwards; /* Animação de entrada */
 }
 
 .filter-group h4 {
@@ -115,6 +119,7 @@
     gap: 20px;
     width: 75%;
     padding: 20px;
+    animation: slideIn 1s ease forwards; /* Animação de entrada */
   }
   
   .product-card {
@@ -124,6 +129,7 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease forwards; /* Animação de entrada */
   }
   
   .product-card:hover {
@@ -140,6 +146,7 @@
   .product-card h3 {
     font-size: 1.3rem;
     color: #333;
+    animation: slideIn 1s ease forwards; /* Animação de entrada */
   }
   
   .product-price {
@@ -207,5 +214,40 @@
     
     .filter-sidebar{
         width: 90%;
+    }
+  }
+
+  /* Você pode adicionar animações específicas para a contagem regressiva se necessário */
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Desloca para baixo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Retorna à posição original */
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px); /* Desloca para a esquerda */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Retorna à posição original */
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px); /* Desloca para baixo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Retorna à posição original */
     }
   }
