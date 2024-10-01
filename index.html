@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet & Gatô</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="caminho/do/seu/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Pet & Gatô - Seu Pet Shop de Confiança" />
+    <meta property="og:description"
+        content="Oferecemos rações premium, brinquedos e produtos personalizados para o seu pet!" />
+</head>
+
+<body>
+    <!-- Cabeçalho com o Logo e Menu Hambúrguer -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/logo.svg" alt="Logo Pet & Gatô">
+                </a>
+            </div>
+
+            <nav id="nav">
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="/site-pet/pag-produtos.html">Produtos</a></li>
+                    <li><a href="/site-pet/pag-banho.html">Banho e Tosa</a></li>
+                    <li><a href="#testimonials">Avaliações</a></li>
+                    <li><a href="#brands">Marcas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="promo-popup" id="promoPopup">
+        <div class="promo-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <img src="assets/banner5.png" alt="Promoção" class="promo-img">
+            <h2>Desconto Exclusivo!</h2>
+            <p>Descubra nossas ofertas especiais e deixe seu pet mais feliz com nossos produtos de qualidade.</p>
+            <a href="#promocoes" class="promo-btn">Ver Mais</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Produtos artesanais e exclusivos para o seu pet</h2>
+            <p>Oferecemos comedouros personalizados, arranhadores exclusivos e muito mais, tudo feito com amor e
+                dedicação.</p>
+            <a href="#products" class="btn hero-btn">Conheça Nossos Produtos</a>
+        </div>
+    </section>
+
+    <section id="video-section">
+        <div class="container">
+            <h2>Novidades</h2>
+            <!-- Video Post -->
+            <div class="video-section">
+                <div class="video-post">
+                    <video autoplay muted loop playsinline>
+                        <source src="/site-pet/assets/postcards.mp4" type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
+                </div>
+
+                <div class="story-text">
+                    <p><strong>Aproveite as nossas promoções incríveis na Pet & Gatô!</strong><br>
+                        Os melhores produtos para o seu pet, desde rações premium até brinquedos e acessórios
+                        personalizados que farão toda a diferença no bem-estar do seu companheiro de quatro patas.
+                        Nossas promoções incluem descontos especiais em arranhadores artesanais e comedouros de madeira
+                        sob medida. Não perca a chance de garantir produtos de qualidade com preços imperdíveis! Confira
+                        agora e faça parte dessa jornada de cuidados e carinho com seu pet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Marcas de Rações -->
+    <section id="brands">
+        <div class="container">
+            <h2>Rações</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper" id="carousel">
+                    <div class="carousel-item"><img src="assets/marcas/marca1.png" alt="Marca 1"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca2.png" alt="Marca 2"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca3.png" alt="Marca 5"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca4.png" alt="Marca 3"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca5.png" alt="Marca 4"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca7.png" alt="Marca 7"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca6.png" alt="Marca 6"></div>
+                    <div class="carousel-item"><img src="assets/marcas/marca8.png" alt="Marca 8"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </div>
+    <!-- Produtos Section -->
+    <section id="products">
+        <div class="container">
+
+            <h2>Produtos em destaque</h2>
+            <div id="product">
+                <div class="product-carousel">
+                    <div class="product-gallery">
+
+                        <div class="product">
+                            <img src="assets/cards/card1.png" alt="Comedouro de madeira personalizado">
+                            <h3>Comedouro Personalizado</h3>
+                            <p>Design elegante e funcional, feito à mão para o conforto do seu pet.</p>
+                            <button class="add-to-cart" data-product="Comedouro Personalizado"
+                                data-price="49.90">Adicionar
+                                ao
+                                Carrinho</button>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card2.png" alt="Arranhador artesanal">
+                            <h3>Arranhador Artesanal</h3>
+                            <p>Arranhadores robustos e bonitos, perfeitos para o seu gato.</p>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card3.png" alt="Brinquedos para cães e gatos">
+                            <h3>Brinquedos de Qualidade</h3>
+                            <p>Brinquedos duráveis e criativos para garantir a diversão do seu pet.</p>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card16.png" alt="Ração Premium">
+                            <h3>Ração Premium</h3>
+                            <p>Somente as melhores rações para garantir a saúde e felicidade do seu animal.</p>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card17.png" alt="Ração Premium">
+                            <h3>Ração Premium</h3>
+                            <p>Somente as melhores rações para garantir a saúde e felicidade do seu animal.</p>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card18.png" alt="Ração Premium">
+                            <h3>Ração Premium</h3>
+                            <p>Somente as melhores rações para garantir a saúde e felicidade do seu animal.</p>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card20.png" alt="Ração Premium">
+                            <h3>Ração Premium</h3>
+                            <p>Somente as melhores rações para garantir a saúde e felicidade do seu animal.</p>
+                        </div>
+
+                        <div class="product">
+                            <img src="assets/cards/card6.png" alt="Ração Premium">
+                            <h3>Ração Premium</h3>
+                            <p>Somente as melhores rações para garantir a saúde e felicidade do seu animal.</p>
+                        </div>
+
+
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promocoes">
+        <div class="container">
+            <h2>Promoções</h2>
+            <div class="promo-container">
+                <div class="promo-card">
+                    <img src="assets/post1.jpg" alt="Promoção 1">
+                    <div class="promo-info">
+                        <h3>Ração Premium com 20% de Desconto</h3>
+                        <p>Aproveite o desconto em nossa linha de rações premium por tempo limitado!</p>
+                        <a href="https://wa.me/51992870231" class="promo-btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <img src="assets/post4.jpg" alt="Promoção 2">
+                    <div class="promo-info">
+                        <h3>Comedouros Personalizados</h3>
+                        <p>Compre 2 e ganhe 10% de desconto no comedouro personalizado de madeira!</p>
+                        <a href="https://wa.me/51992870231" class="promo-btn">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <div class="promo-card">
+                    <img src="assets/post6.jpg" alt="Promoção 3">
+                    <div class="promo-info">
+                        <h3>Arranhadores Sob Medida</h3>
+                        <p>Garanta um arranhador sob medida com frete grátis em compras acima de R$ 200,00!</p>
+                        <a href="https://wa.me/51992870231" class="promo-btn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Seção de Testemunhos -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <img src="assets/avatar-fem.png" alt="Cliente 1">
+                    <h3>Maria Silva</h3>
+                    <p>"A melhor experiência que já tive comprando ração para meus pets! Produtos de alta qualidade e um
+                        atendimento incrível!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="assets/avatar-mas.webp" alt="Cliente 2">
+                    <h3>João Pereira</h3>
+                    <p>"Os comedouros personalizados são incríveis! Meus gatos adoram e o design combina perfeitamente
+                        com a decoração da minha casa."</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="assets/avatar-fem2.webp" alt="Cliente 3">
+                    <h3>Ana Costa</h3>
+                    <p>"Fiquei impressionada com a qualidade dos brinquedos. Meus cães estão mais felizes do que nunca!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feed do Instagram -->
+    <section id="instagram-feed">
+        <h2>Nosso Instagram</h2>
+        <div class="instagram-container">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-ab48ba39-b865-4cf9-8ce0-2da29154cbf5" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Estamos sempre prontos para atender você! Entre em contato pelos nossos canais abaixo:</p>
+            <div class="contact-details">
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> petegato2024@gmail.com</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><strong>Telefone:</strong> (51) 99287-0231</p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><strong>Endereço:</strong> Saldanha da gama, 256 Partenon - loja 4</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão de WhatsApp Fixo -->
+    <a href="https://wa.me/5551992870231" target="_blank" class="whatsapp-button">
+        <img src="assets/WhatsApp.svg.png" alt="WhatsApp" />
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/shop_petegato/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51992870231"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <p>&copy; 2024 Pet & Gatô. Todos os direitos reservados.</p>
+            <div class="autor-info">
+                <a href="https://brian-ail-portfolio.netlify.app" target="_blank">
+                    <i class="fas fa-code"></i> Desenvolvido por Brian - Analista de Dados e Desenvolvedor Web
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+         
+         const btnMobile = document.getElementById('btn-mobile');
+        const nav = document.getElementById('nav');
+
+        function toggleMenu() {
+            const isActive = nav.classList.toggle('active');
+            btnMobile.setAttribute('aria-expanded', isActive);
+            btnMobile.setAttribute('aria-label', isActive ? 'Fechar Menu' : 'Abrir Menu');
+        }
+
+        function closeMenuOnClickOutside(event) {
+            if (nav.classList.contains('active') && !nav.contains(event.target) && event.target !== btnMobile) {
+                toggleMenu();
+            }
+        }
+
+        // Adiciona os eventos de clique e toque no botão de menu
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu, {
+            passive: true
+        });
+
+        // Fecha o menu ao clicar fora dele
+        document.addEventListener('click', closeMenuOnClickOutside);
+
+        // Fecha o menu ao clicar em qualquer link dentro do nav
+        nav.addEventListener('click', (event) => {
+            if (event.target.classList.contains('nav-link')) {
+                toggleMenu();
+            }
+        });
+
+        // Exibe o popup após alguns segundos ou em resposta a algum evento
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('promoPopup').style.display = 'flex';
+            }, 2000); // Exibe o popup após 2 segundos
+        };
+
+        // Fecha o popup quando o botão de fechar for clicado
+        document.getElementById('closePopup').onclick = function () {
+            document.getElementById('promoPopup').style.display = 'none';
+        };
+
+        // Fecha o popup se o usuário clicar fora do conteúdo
+        window.onclick = function (event) {
+            var popup = document.getElementById('promoPopup');
+            if (event.target == popup) {
+                popup.style.display = 'none';
+            }
+        };
+
+        // Seleciona o carrossel
+        const carousel = document.getElementById('carousel');
+        const clone = carousel.innerHTML; // Clona o conteúdo do carrossel
+
+        // Duplica os itens do carrossel
+        carousel.innerHTML += clone;
+
+        // JavaScript para fazer o botão vibrar automaticamente
+        const whatsappButton = document.querySelector('.whatsapp-button');
+
+        function startVibrating() {
+            whatsappButton.classList.add('vibrating');
+        }
+
+        function stopVibrating() {
+            whatsappButton.classList.remove('vibrating');
+        }
+
+        // Iniciar a vibração a cada 5 segundos
+        setInterval(() => {
+            startVibrating();
+            setTimeout(stopVibrating, 1000); // Para a vibração após 1 segundo
+        }, 5000);
+
+        
+        let currentIndex = 0;
+
+        function moveSlide(direction) {
+            const productGallery = document.querySelector('.product-gallery');
+            const totalProducts = document.querySelectorAll('.product').length;
+
+            // Atualiza o índice atual
+            currentIndex += direction;
+
+            // Impede que o índice ultrapasse os limites
+            if (currentIndex < 0) {
+                currentIndex = 0;
+            } else if (currentIndex > totalProducts / 2 - 1) {
+                currentIndex = Math.floor(totalProducts / 2 - 1);
+            }
+
+            // Calcula a nova posição do slider
+            const translateX = -currentIndex * 50; // Cada produto ocupa 50% da largura
+            productGallery.style.transform = `translateX(${translateX}%)`;
+        }
+
+    </script>
+</body>
+
+</html>
