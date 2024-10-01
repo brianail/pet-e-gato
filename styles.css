@@ -304,12 +304,14 @@ h2 {
 /* Estilo Produtos */
 
 #product{  
+    width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    box-sizing: border-box;
     padding: 20px;
 }
-
 
 /* Estilo de cada Produto */
 .product {
